@@ -747,6 +747,7 @@ class Inovarti_Onestepcheckout_AjaxController extends Mage_Checkout_Controller_A
         );
         $return = '';
 
+        /*
         try {
 
             $clientSoap = new SoapClient("https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente?wsdl", array(
@@ -768,6 +769,16 @@ class Inovarti_Onestepcheckout_AjaxController extends Mage_Checkout_Controller_A
         } catch (Exception $e) {
             $return = "var resultadoCEP = { 'uf' : '', 'cidade' : '', 'bairro' : '', 'tipo_logradouro' : '', 'logradouro' : '', 'resultado' : '0', 'resultado_txt' : 'cep nao encontrado' }";
         }
+        */
+        
+        $urlviacep = 'https://viacep.com.br/ws/' . $cep . '/xml/';
+        $xml = simplexml_load_string(file_get_contents($urlviacep));
+
+        if (false == $xml || $xml->erro == 'true') {
+            $return = "var resultadoCEP = { 'uf' : '', 'cidade' : '', 'bairro' : '', 'tipo_logradouro' : '', 'logradouro' : '', 'resultado' : '0', 'resultado_txt' : 'cep nao encontrado' }";
+        } else {
+            $return = "var resultadoCEP = { 'uf' : '" . $xml->uf . "', 'cidade' : '" . $xml->localidade . "', 'bairro' : '" . $xml->bairro . "', 'tipo_logradouro' : '', 'logradouro' : '" . $xml->logradouro . "', 'resultado' : '1', 'resultado_txt' : 'sucesso%20-%20cep%20completo' }";
+        }        
 
         $this->getResponse()->setBody($return);
     }
