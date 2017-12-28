@@ -1,0 +1,12 @@
+"The free version of ""%s"" extension does not include this network. Please <a href=""%s"" target=""_blank"">upgrade to Social Login Pro magento extension</a> in order to receive 50+ social login networks.","The free version of ""%s"" extension does not include this network. Please <a href=""%s"" target=""_blank"">upgrade to Social Login Pro magento extension</a> in order to receive 50+ social login networks."
+
+"Customer with email (%s) already exists in the database. If you are sure that it is your email address, please <a href=""%s"">click here</a> to retrieve your password and access your account.","Cliente com o email (%s) já existe no banco de dados. Se você tiver certeza de que é seu endereço de e-mail, <a href=""%s""> clique aqui </a> para recuperar sua senha e acessar sua conta."
+"Customer registration successful. Your password was send to the email: %s","Cliente registrado com sucesso. Sua senha foi enviada para o e-mail: %s"
+"Customer registration successful.","Cliente registrado com êxito."
+"The Date of Birth is incorrect.","A data de nascimento está incorreta."
+"Visible Buttons","Botões visíveis"
+"Hidden Buttons","Botões ocultos"
+"Login with your social account","Faça login com sua conta social"
+"Register with your social account","Registre-se com sua conta social"
+"show more","mostre mais"
+"Your account needs to be updated. The email address in your profile is invalid. Please indicate your valid email address by going to the <a href=""%s"">Account edit page</a>","Sua conta precisa ser atualizada. O endereço de e-mail em seu perfil é inválido. Indique seu endereço de e-mail válido, indo para a <a href=""%s""> página de edição de conta </a>"
