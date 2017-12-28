@@ -34,7 +34,7 @@ input[type=email], input[type=search], input[type=number], input[type=password],
 .onestepcheckout-overlay-24{background-image: url('../images/ajax-loader-24px.gif');background-repeat: no-repeat;background-position: center center;}
 .onestepcheckout-overlay-16{background-image: url('../images/ajax-loader-16px.gif');background-repeat: no-repeat;background-position: center center;}
 .onestepcheckout-add-loader-into-this-block,#onestepcheckout-order-review-cart-wrapper,#onestepcheckout-order-review-coupon-wrapper{position: relative;}
-.osc-title{border-bottom: 1px solid #ececec;width: 100%;border-top: 1px solid #ececec;position: relative;cursor: default;color: #3399cc;font-size: 14px;font-weight: 200;line-height: 40px;height: 40px;float: left;margin: 0px 4px 0px 0px;clear: both;}
+.osc-title{border-bottom: 1px solid #ececec;width: 100%;border-top: 1px solid #ececec;position: relative;cursor: default;color: #c08a38;font-size: 14px;font-weight: 200;line-height: 40px;height: 40px;float: left;margin: 0px 4px 0px 0px;clear: both;}
 #onestepcheckout-authentification-button{border-top: 1px solid #D8D2C7;}
 #onestepcheckout-authentification{overflow: hidden;min-height: 99px;}
 #onestepcheckout-authentification-container{height: 120px;position: relative;top: 0px;}
